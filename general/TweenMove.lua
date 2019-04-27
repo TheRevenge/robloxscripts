@@ -3,6 +3,7 @@ local H=G.LocalPlayer;
 local E=game:GetService("TweenService")
 local a4=H.Character
 local a5 = game.workspace.Something.CFrame -- This must be a CFrame, you can also use CFrame.new(x, y, z)
+-- Function
 function tweenMove(_,a0)
 	local a1=Instance.new("CFrameValue")
 	a1.Value=_:GetPrimaryPartCFrame()
@@ -11,4 +12,5 @@ function tweenMove(_,a0)
 	local a3=E:Create(a1,a2,{Value=a0})
 	a3:Play()
 end;
-tweenMove(a4,a5)
+
+tweenMove(a4,a5) -- Calling the function
